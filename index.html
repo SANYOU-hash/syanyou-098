@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sysanyou - 官方网站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SYSANYOU</div>
+            <ul>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#contact">联系方式</a></li>
+                <li><a href="#support">支持我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>欢迎来到 Sysanyou 的世界</h1>
+                <p>一个充满激情和乐趣的直播创作者</p>
+                <div class="cta-buttons">
+                    <a href="https://www.twitch.tv/sysanyou" target="_blank" class="btn"><i class="fab fa-twitch"></i> 立即观看直播</a>
+                    <a href="https://www.youtube.com/@sanyou-h4y" target="_blank" class="btn btn-outline"><i class="fab fa-youtube"></i> 探索我的YouTube</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-image">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/eac08c87-d5c8-47f4-abf2-faa9b4149429-profile_image-300x300.png" alt="Sysanyou 头像">
+            </div>
+            <div class="about-content">
+                <h2>关于 Sysanyou</h2>
+                <p>大家好，我是 **Sysanyou**，一名热爱游戏和分享的YouTube主播，同时也在Twitch进行直播！我的直播间总是充满活力，你可以在这里找到最精彩的游戏瞬间和最有趣的互动体验。</p>
+                <p>我主要活跃在 **Twitch** 平台，与观众进行实时互动。无论你是想了解最新的游戏玩法，还是想找个地方放松心情，我的直播间都是你的不二选择！</p>
+                <p>我最喜欢在直播中探索的游戏包括：</p>
+                <div class="game-list">
+                    <span class="game-tag">GTA 私服</span>
+                    <span class="game-tag">我的世界 (Minecraft)</span>
+                    <span class="game-tag">其他主机游戏 (不定期)</span>
+                </div>
+                <p>除了上述热门游戏，我偶尔也会在直播中尝试一些**其他主机游戏**。虽然频率不高，但每次都会带来不一样的精彩体验！所以，记得关注我的直播预告，不要错过这些惊喜哦！</p>
+                <p>如果你喜欢我的内容，别忘了在我的Twitch和YouTube频道点击**订阅**！你的支持是我最大的动力！</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>联系 Sysanyou</h2>
+            <div class="social-links">
+                <div class="social-link-item">
+                    <a href="mailto:sanyou123@naver.com">
+                        <i class="fas fa-envelope"></i>
+                        <span>邮箱</span>
+                    </a>
+                </div>
+                <div class="social-link-item">
+                    <a href="https://discord.gg/2xpCDUU9m7" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord 频道</span>
+                    </a>
+                </div>
+                <div class="social-link-item">
+                    <a href="https://www.youtube.com/@sanyou-h4y" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube 频道</span>
+                    </a>
+                </div>
+                <div class="social-link-item">
+                    <a href="https://www.twitch.tv/sysanyou" target="_blank">
+                        <i class="fab fa-twitch"></i>
+                        <span>Twitch 频道</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>有任何合作或疑问，可以通过以下方式联系我：</p>
+                <p>邮箱: <a href="mailto:sanyou123@naver.com">sanyou123@naver.com</a></p>
+            </div>
+        </section>
+
+        <section id="support" class="donate-section">
+            <h2>支持 Sysanyou</h2>
+            <p>如果我的直播和视频带给你快乐，并且你希望支持我继续创作更多精彩内容，你可以通过以下链接进行赞赏。</p>
+            <p>你的每一份支持都将帮助我提升直播质量，带来更好的观看体验！</p>
+            <a href="https://streamlabs.com/sysanyou1/tip" target="_blank" class="btn">
+                <i class="fas fa-hand-holding-heart"></i> 赞赏支持我
+            </a>
+            <p style="margin-top: 40px; font-size: 1.5em; font-weight: 700; color: var(--secondary-color);">
+                <i class="fas fa-star"></i> 别忘了点击订阅，加入我的社群！<i class="fas fa-star"></i>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Sysanyou 个人网站. 版权所有.</p>
+    </footer>
+
+    <script>
+        // 简单的平滑滚动效果
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
